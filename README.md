@@ -1,2 +1,2 @@
-# Assignment 1
-Youtube Link for  Virtual Pet Simulator:[https://www.youtube.com/watch?v=7ExBfxsjRDE]
+The simulator provides a simple and engaging way for users to care for their virtual pet by feeding, playing, and resting.Overall, the Virtual Pet Simulator offers an enjoyable and educational experience, allowing users to learn about pet care while having fun interacting with their virtual companion. Whether it`s ensuring their pet is well-fed, happy, and healthy, users can enjoy the responsibility and joy of pet ownership in a virtual environment.
+Here is the Youtube Link for  Virtual PetSimulator:[https://www.youtube.com/watch?v=7ExBfxsjRDE]
