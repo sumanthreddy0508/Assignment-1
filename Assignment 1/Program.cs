@@ -156,10 +156,8 @@ class Program
         }
 
         VirtualPet pet = new VirtualPet(petType, petName);
-
-        Console.WriteLine($"Welcome to Virtual Pet Simulator!");
         Console.WriteLine($"You adopted {pet.Name} the {pet.Type}!");
-
+        Console.WriteLine($"Welcome {pet.Name}!Let's take care of him")
         while (true)
         {
 
@@ -187,7 +185,7 @@ class Program
                     pet.CheckStatus();
                     break;
                 case 5:
-                    Console.WriteLine("Exiting program. Goodbye!");
+                    Console.WriteLine("Thank you for playing. Goodbye!");
                     return;
                 default:
                     Console.WriteLine("Invalid choice. Try again.");
