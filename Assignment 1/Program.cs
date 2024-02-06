@@ -2,61 +2,61 @@
 
 class VirtualPet
 {
-    public string Type { get; set; }
-    public string Name { get; set; }
-    private int hunger;
-    private int happiness;
-    private int health;
+    public string Type { get; set; } // Type of the pet (e.g., Cat, Dog, Rabbit)
+    public string Name { get; set; } // Name of the pet
+    private int hunger; // Hunger level of the pet (on a scale of 0 to 10)
+    private int happiness;// Happiness level of the pet (on a scale of 0 to 10)
+    private int health;// Health level of the pet (on a scale of 0 to 10)
 
     public int Hunger
     {
         get { return hunger; }
-        set { hunger = Math.Max(0, Math.Min(10, value)); }
+        set { hunger = Math.Max(0, Math.Min(10, value)); } // Ensure hunger value stays within the range of 0 to 10
     }
 
     public int Happiness
     {
         get { return happiness; }
-        set { happiness = Math.Max(0, Math.Min(10, value)); }
+        set { happiness = Math.Max(0, Math.Min(10, value)); } // Ensure happiness value stays within the range of 0 to 10
     }
 
     public int Health
     {
         get { return health; }
-        set { health = Math.Max(0, Math.Min(10, value)); }
+        set { health = Math.Max(0, Math.Min(10, value)); } // Ensure health value stays within the range of 0 to 10
     }
 
     public VirtualPet(string type, string name)
     {
         Type = type;
         Name = name;
-        Hunger = 5;
-        Happiness = 5;
+        Hunger = 5;//initial hunger is set to 5
+        Happiness = 5;//initial happiness is set to 5
         Health = 10; // Initial health is set to 10
     }
 
     public void Feed()
     {
-        Hunger -= 2;
-        Health += 1;
+        Hunger -= 2;// Decrease hunger level by 2
+        Health += 1;// Increase health level by 1
         Console.WriteLine($"{Name} has been fed. Hunger decreased by 2. Health increased by 1.");
-        UpdateHealth();
+        UpdateHealth();// Update overall health based on hunger and happiness levels
     }
 
     public void Play()
     {
-        Happiness += 2;
-        Hunger += 1;
+        Happiness += 2;// Increase happiness level by 2
+        Hunger += 1;// Increase hunger level by 1
         Console.WriteLine($"{Name} is happy! Happiness increased by 2. Hunger increased by 1.");
-        UpdateHealth();
+        UpdateHealth();// Update overall health based on hunger and happiness levels
     }
 
     public void Rest()
     {
-        Happiness -= 1;
-        Health += 2;
+        Happiness -= 1;// Decrease happiness level by 1
+        Health += 2;//Increase health level by 2
         Console.WriteLine($"{Name} is resting. Happiness decreased by 1. Health increased by 2.");
-        UpdateHealth();
+        UpdateHealth();// Update overall health based on hunger and happiness levels
     }
 
     private void UpdateHealth()
